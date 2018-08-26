@@ -7,12 +7,20 @@
     "test": "jest"
   },
   "dependencies": {
+    "@shoutem/theme": "^0.11.1",
+    "@shoutem/ui": "^0.23.4",
+    "babel-preset-react-native": "^4.0.0",
+    "lodash": "^4.17.10",
     "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react-native": "^0.55.4",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-reactnativeasyncstorage": "^1.0.5"
   },
   "devDependencies": {
     "babel-jest": "23.4.2",
-    "babel-preset-react-native": "5.0.2",
     "jest": "23.5.0",
     "react-test-renderer": "16.4.1"
   },

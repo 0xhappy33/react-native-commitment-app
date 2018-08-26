@@ -1,21 +1,18 @@
 import React from 'react';
-import { Text, TouchableOpacity  } from '@shoutem/ui';
+
+import { Text, TouchableOpacity } from '@shoutem/ui';
 import { connectStyle } from '@shoutem/theme';
 
-const CircleButton = ({ text, style, onPress, styleName }) => {
+const CircleButton = ({ text, style, onPress, styleName }) => (
     <TouchableOpacity style={style.main} onPress={onPress}>
         <Text style={style.caption}>{text}</Text>
     </TouchableOpacity>
-}
+);
 
 const style = {
     main: {
         alignItems: 'center',
         justifyContent: 'center',
-        width: 150,
-        height: 150,
-        borderRadius: 150,
-        backgroundColor: 'limegreen',
     },
     '.large': {
         main: {
@@ -36,12 +33,7 @@ const style = {
         caption: {
             fontSize: 25
         }
-    },
-    caption: {
-        fontSize: 35,
-        color: 'white'
-    },
+    }
 }
 
-export default connectStyle('CToDoApp.CircleButton', style)(CircleButton);
-
+export default connectStyle('CommitApp.CircleButton', style)(CircleButton);
