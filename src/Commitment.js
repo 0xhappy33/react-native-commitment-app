@@ -62,7 +62,8 @@ const style = {
     main: {
         backgroundColor: 'rgba(0,0,0,0)',
         paddingTop: 100,
-        width: Dimensions.get('window').width
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height
     },
     day: {
         height: 60,
