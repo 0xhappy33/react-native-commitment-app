@@ -32,7 +32,6 @@ load(store);
 const App = connect(state => state)(({ commitments }) => {
     let list = Object.keys(commitments)
                      .sort((a, b) => a < b ? -1 : (a > b ? 1 : 0));
-    const urlImage = './src/img/background.jpg';
     return (
         <StyleProvider style={theme}>
             <Screen>
@@ -66,7 +65,7 @@ const theme = Object.assign(UITheme(), {
     'shoutem.ui.Image': {
         '.background': {
             flex: 1,
-            resizeMode: 'center',
+            resizeMode: 'repeat',
             position: 'absolute'
         }
     },
@@ -90,7 +89,7 @@ const theme = Object.assign(UITheme(), {
         }
     },
     'shoutem.ui.ListView': {
-        // backgroundColor: 'rgba(0, 0, 0, 0)',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
         flex: 1
     },
     'CommitApp.CircleButton': {
